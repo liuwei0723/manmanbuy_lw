@@ -1,0 +1,72 @@
+/* mmb的主题颜色 */
+ @main-color: #f85000;
+/* a的颜色 */
+ @a-color: #5a5a5a;
+/* 边框颜色 */
+ @border-color: #ccc;
+ * {
+     margin: 0rem;
+     padding: 0rem;
+}
+
+body{
+	font-size: 12px;
+}
+ img {
+     vertical-align: middle;
+}
+ a {
+     color: @a-color;
+}
+
+// 公用头部
+#header{
+	display: flex;
+	background-color: #fff;
+	height: .45rem;
+	padding: .1rem;
+	width: 100%;
+	align-items: center;
+	.logo{
+		width: .8rem;
+		img{
+			width: 100%;
+		}
+	}
+	form{
+		margin: 0 .1rem;
+		flex:1;
+		position: relative;
+		i{
+			top: 0.02rem;
+			left: .05rem;
+			width: 0.2rem;
+			height: 0.2rem;
+			color: #f04848;
+			position: absolute;
+		}
+		>input{
+			text-indent: 1em;
+			width: 100%;
+			height: .3rem;
+			border:0px;
+			border-radius:.15rem;
+			background-color: #eee;
+			margin-bottom: 0rem;
+		}
+	}
+	.download{
+		
+		width: .38rem;
+		font-size: .11rem;
+		border: 1px solid @main-color;
+		height: .2rem;
+		border-radius: .2rem;
+		line-height: .2rem;
+		font-size: .11rem;
+		text-align: center;
+		color: @main-color;
+	}
+}
+
+

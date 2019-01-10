@@ -1,3 +1,4 @@
+// 公用方法
 $(function() {
     var mmb = new MMB();
     mmb.getindexmenu();
