@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买比价网--手机版</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- rem -->
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet/less" href="less/base.less">
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet/less" href="less/productList.less">
+    <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+    <!-- 环形导航菜单 -->
+    <div class="mask hide"></div>
+    <div class="circle">
+        <div class="ring"><a href="category.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a>
+            <a href="inlanddiscount.html" class="menuItem"></a> <a href="baicaijia.html" class="menuItem"></a> <a href="moneyctrl.html"
+                class="menuItem"></a> <a href="coupon.html" class="menuItem"></a> <a href="gsproduct.html" class="menuItem"></a>
+            <a href="index.html" class="menuItem"></a></div><a href="#" class="center"></a>
+    </div>
+    <!-- 脑壳 -->
+    <nav id="nav">
+        <div>
+            <span><a href="index.html">首页</a></span>>
+            <span><a href="category.html">全部分类</a></span>>
+            <span><a href="#" class="thirdly">手机</a></span>
+        </div>
+        <button type="button" class="mui-btn mui-btn-outlined">筛选</button>
+    </nav>
+    <!-- 身体 -->
+
+    <main id="main">
+        <!--下拉刷新容器-->
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--数据列表-->
+                <ul class="mui-table-view mui-table-view-chevron">
+                    <div class="itemBox">
+                        <ul class="mui-table-view item">
+
+                        </ul>
+                    </div>
+
+                    <div class="ranking">
+                        <a href="#"><span>品牌排行</span>
+                            <img src="images/more.png" alt=""></a>
+                    </div>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <!-- jio -->
+    <footer id="footer">
+
+    </footer>
+
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/base.js"></script>
+    <!-- 公共组件 -->
+    <script src="js/tool.js"></script>
+    <!-- 你自己的js文件 -->
+    <script src="js/productList.js"></script>
+    <script id="categoryData" type="text/html">
+        {{each result as value }}
+        <li class="mui-table-view-cell ontap" data-productid="{{value.productId}}" class="">
+               {{@value.productImg}}
+                <div>
+                    <p class="title">{{value.productName}}</p>
+                    <p class="two"> <span class="price">{{value.productPrice}}</span>
+                        <span>
+                            <img src="images/star.svg" alt="">
+                            <img src="images/star.svg" alt="">
+                            <img src="images/star.svg" alt="">
+                            <img src="images/star.svg" alt="">
+                            <img src="images/star.svg" alt="">
+                        </span>
+                    </p>
+                    <div class="bottom">
+                        <a href="#">
+                            {{value.productCom}}
+                        </a>
+                        <a href="#">
+                            {{value.productQuote}}
+                        </a>
+                    </div>
+                </div>
+
+        </li>
+        {{/each}}
+    </script>
+</body>
+</html>

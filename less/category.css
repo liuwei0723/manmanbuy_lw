@@ -1,0 +1,126 @@
+/* mmb的主题颜色 */
+/* a的颜色 */
+/* 边框颜色 */
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+body {
+  font-size: .12px;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: #5a5a5a;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+#header {
+  display: flex;
+  background-color: #fff;
+  height: .45rem;
+  padding: .1rem;
+  width: 100%;
+  align-items: center;
+}
+#header .logo {
+  width: .8rem;
+}
+#header .logo img {
+  width: 100%;
+}
+#header form {
+  margin: 0 .1rem;
+  flex: 1;
+  position: relative;
+}
+#header form i {
+  top: 0.02rem;
+  left: .05rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  color: #f04848;
+  position: absolute;
+}
+#header form > input {
+  text-indent: 1em;
+  width: 100%;
+  height: .3rem;
+  border: 0px;
+  border-radius: .15rem;
+  background-color: #eee;
+  margin-bottom: 0rem;
+}
+#header .download {
+  width: .38rem;
+  border: 1px solid #f85000;
+  height: .2rem;
+  border-radius: .2rem;
+  line-height: .2rem;
+  font-size: .11rem;
+  text-align: center;
+  color: #f85000;
+}
+#main {
+  font-size: .14rem;
+  background-color: #ccc;
+  box-sizing: border-box;
+}
+#main .title {
+  background-color: #eee;
+  font-size: .15rem;
+  height: 0.43rem;
+  padding: 0 .15rem;
+  line-height: .43rem;
+}
+#main .title::after {
+  right: .27rem;
+  font-size: .3rem;
+}
+#main .title strong {
+  display: block;
+  padding-left: .15rem;
+}
+#main .success {
+  padding: 0.11rem 0rem;
+}
+#main .secondary {
+  width: 100%;
+  padding: 0;
+  margin: 0.11rem 0rem -0.11rem;
+  text-align: center;
+}
+#main .secondary li {
+  float: left;
+  width: 33.33%;
+  height: 0.4rem;
+  line-height: .4rem;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#main .ranking {
+  margin-top: .15rem;
+  height: 0.35rem;
+  background-color: #f85000;
+  padding: 0 .2rem;
+}
+#main .ranking a {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  height: 0.35rem;
+  line-height: .35rem;
+}
+#main .ranking a span {
+  font-size: .16rem;
+  font-weight: 600;
+  color: #fff;
+}
+#main .ranking a img {
+  width: 0.2rem;
+  height: 0.2rem;
+  margin-top: .07rem;
+}
