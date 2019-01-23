@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买比价网--手机版</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+     <link rel="stylesheet/less" href="./less/haitao.less">
+     <script src="./lib/less/less.js"></script>
+     <script src="js/rem.js"></script>
+    
+</head>
+<body>
+    <!-- 脑壳 -->
+    <header id="header">
+        <div class="head" id="ct_100-headerApp">
+            <div class="back"><a href="index.html" class="icon-back">&lt;</a></div>
+            <h1>海淘折扣</h1>
+            <div class="home">
+                <a href="#">
+                <img src="images/header_app.png" width="32" alt="">
+                 </a>
+            </div>
+           
+        </div>
+    </header>
+    <!-- 身体 -->
+     <main id="main">
+    <div class="content">
+        <ul>
+            <li>
+                <div class="left"><img src="./images/gengduo.png" alt=""></div>
+                <div class="right">
+                        <div class="text-title">
+                                <span class="text">移动端凑单品：海天 鲜味 生抽 1.28L</span>
+                                <span class="text-1">10.9元</span>
+                            </div>
+                            <div class="text-body">
+                               <p> 京东商城<span>10-25 13:57</span></p>
+                               <p>已经有5人评论</p>
+                            </div>
+                </div>
+            </li>
+            <li>
+                    <div class="left"><img src="./images/gengduo.png" alt=""></div>
+                    <div class="right">
+                            <div class="text-title">
+                                    <span class="text">移动端凑单品：海天 鲜味 生抽 1.28L</span>
+                                    <span class="text-1">10.9元</span>
+                                </div>
+                                <div class="text-body">
+                                   <p> 京东商城<span>10-25 13:57</span></p>
+                                   <p>已经有5人评论</p>
+                                </div>
+                    </div>
+                </li>
+                <li>
+                        <div class="left"><img src="./images/gengduo.png" alt=""></div>
+                        <div class="right">
+                                <div class="text-title">
+                                        <span class="text">移动端凑单品：海天 鲜味 生抽 1.28L</span>
+                                        <span class="text-1">10.9元</span>
+                                    </div>
+                                    <div class="text-body">
+                                       <p> 京东商城<span>10-25 13:57</span></p>
+                                       <p>已经有5人评论</p>
+                                    </div>
+                        </div>
+                    </li>
+                    <li>
+                            <div class="left"><img src="./images/gengduo.png" alt=""></div>
+                            <div class="right">
+                                    <div class="text-title">
+                                            <span class="text">移动端凑单品：海天 鲜味 生抽 1.28L</span>
+                                            <span class="text-1">10.9元</span>
+                                        </div>
+                                        <div class="text-body">
+                                           <p> 京东商城<span>10-25 13:57</span></p>
+                                           <p>已经有5人评论</p>
+                                        </div>
+                            </div>
+                        </li>
+
+
+        </ul>    
+    </div> 
+    <!-- 分页 -->
+   	
+        
+        <div id="pagination"></div>
+     </main>
+
+    <!-- jio -->
+    <footer id="footer">
+        <div class="foot_top">
+            <a href="#">登录</a> <a href="#">注册</a>
+            <a href="#" style="width: 40%; border: 0;">
+                <i class="fa fa-arrow-up"></i>返回顶部</a>
+        </div>
+        <div class="foot_bottom">
+            <p>
+                <a href="#" style="color: #f85000;">手机APP下载</a>
+                <a href="#" style="color:#8f8f94">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+            </p>
+        </div>
+    </footer>
+ <!-- 渲染页面 -->
+  <script id="haitaotpl" type="text/html">
+  {{each result value}}
+<a href="haitaoxq.html?id={{value.productId}}">
+
+        <li>
+                <div class="left">
+                    {{@value.productImgSm}}
+                </div>
+                <div class="right">
+                        <div class="text-title">
+                                <span class="text">{{value.productName}}</span>
+                                <span class="text-1">{{value.productPinkage}}</span>
+                            </div>
+                            <div class="text-body">
+                               <p> {{value.productFrom}}<span>{{value.productTime}}</span></p>
+                               <p>{{value.productComCount}}</p>
+                            </div>
+                </div>
+            </li>
+</a>
+
+
+
+  {{/each}}
+
+</script>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 公共组件 -->
+    <script src="js/tool.js"></script>
+       <!-- 分页插件 -->
+     <script src="./js/myPagination.js"></script>
+    <!-- 你自己的js文件 -->
+    <script src="./js/haitao.js"></script>
+  
+</body>
+
+</html>

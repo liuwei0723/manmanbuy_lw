@@ -1,0 +1,249 @@
+li {
+    list-style: none;
+}
+a {
+    color: #333;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    height: 100%;
+}
+#header {
+    position: fixed;
+    background-color: #f4483e;
+    height: .5rem;
+    padding: .05rem;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    .left {
+        width: 60%;
+        padding: .05rem;
+        float: left;
+        // padding: .05rem;
+        a {
+            width: 2rem;
+            display: inline-block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .right {
+        float: right;
+        margin-right: .2rem;
+        width: .48rem;
+        height: .48rem;
+        a {
+            width: 100%;
+            img {
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+.nav {
+    position: fixed;
+    padding-top: .5rem;
+    font-size: .16rem;
+    z-index: 2;
+    width: 100%;
+    z-index: 999;
+    .top {
+        line-height: .4rem;
+        background-color: #ccc;
+        width: 100%;
+        a {
+            color: black;
+        }
+        button {
+            float: right;
+            font-size: .14rem;
+            border-radius: .08rem;
+            margin-right: .2rem;
+            margin-top: .04rem;
+        }
+    } 
+}
+
+#main {
+    padding-top: .9rem;
+    background-color: #fff;
+    .detail {
+        p {
+            padding: .25rem;
+            padding-bottom: 0;
+            font-size: .14rem;
+            color: #444;
+        }
+        .img {
+            text-align: center;
+            .like {
+                width: .5rem;
+            }
+        }
+        .do {
+            box-sizing: border-box;
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+            height: .4rem;
+            a {
+                float: left;
+                color: #ddd;
+                height: 100%;
+                padding: .03rem .27rem;
+                box-sizing: border-box;
+                background-color: rgb(219, 188, 12);
+                border-right: 2.5px solid red;
+            }
+            a:first-child {
+                background-color: orange;
+            }
+        }
+        .jd {
+            line-height: .4rem;
+            border-bottom: 1px solid #ccc;
+            img {
+                width: .16rem;
+                margin-left: .1rem;
+                margin-top: .12rem;
+            }  
+            strong {
+                margin-left: .15rem;
+            }
+            .price {
+                float: right;
+                span {
+                    color: red;
+                }
+                button {
+                    background-color: orange;
+                    color: #ddd;
+                    margin-top: .03rem;
+                }
+            }
+            
+        }
+        .something {
+            border-bottom: 3px solid #ccc;
+            .current-price {
+                padding: 10px;
+                color: #bbb;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .comment-top {
+        margin-top: .03rem;
+        .friend {
+            background-color: #ccc;
+            span {
+                line-height: .45rem;
+                text-align: center;
+            }
+        }
+        ul {
+            li {
+                padding: .09rem;
+                .friend-name {
+                    line-height: .3rem;
+                    border-bottom: 1px solid #fff;
+                    // span:first-child {
+                    //     // float: left;
+                    // }
+                    span:last-child {
+                    float: right;
+                    }
+                }
+                .star {
+                    height: .3rem;
+                    img {
+                        float: left;
+                        width: .18rem;
+                    }
+                    .buyjd {
+                        float: right;
+                    }
+                }
+                
+            }
+            
+        }
+        
+        
+    }
+    
+
+
+
+
+
+    // 评论底部
+    .bottom {
+        .page-on {
+            text-align: center;
+            background-color: #ddd;
+            padding: .05rem;
+            a:first-child {
+                margin-right: .2rem;
+            }
+        }
+        .brand {
+            color: #fff;
+            background-color: #f4483e;
+            padding: .06rem;
+            a {
+                width: 100%;
+                i {
+                    float: right;
+                    margin-right: .1rem;
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    // height: 1rem;
+    background-color: #ddd;
+    padding-top: .33rem;
+    .href {
+        background-color: #444;
+        width: 100%;
+        height: .33rem;
+        padding: 0;
+        box-sizing: border-box;
+        border-bottom: 1px solid #aaa;
+
+        a {
+            color: #fff;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: .06rem .37rem;
+            border-left: 1px solid #aaa;
+        }
+        a:first-child {
+            border: 0;
+
+        }
+    }
+    .bottom {
+        padding-top: .2rem;
+        background-color: #444;
+        text-align: center;
+        .download {
+            margin-bottom: 0;
+        }
+        .buy {
+            margin-bottom: 0;
+            color: #bbb;
+        }
+    }
+}

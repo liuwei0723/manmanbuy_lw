@@ -1,0 +1,111 @@
+@import './base.less';
+body {
+    height: 100vh;
+}
+
+
+
+#main {
+    height: auto;
+    margin-top: .44rem;
+    position: relative;
+    ul {
+        padding-left: .1rem;
+        height: 100%;
+        li {
+            height: 1.3rem;
+            a {
+                color: black;
+                display: flex;
+                img {
+                    width: .85rem;
+                    height: .85rem;
+                    float: none;
+                }
+                .mui-media-body {
+                    padding-left: .25rem;
+                    flex: 1;
+                    .wrap {
+                        font-size: .15rem;
+                        width: 2.05rem;
+                        height: .6rem;
+                        white-space:normal;
+                    }
+                    i {
+                        color: #ff6c00;
+                        font-size: .14rem;
+                    }
+                    .source {
+                        padding-top: .1rem;
+                        padding-bottom: .1rem;
+                        display: flex;
+                        font-size: .14rem;
+                        color: #a1a1a1;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner>div {
+    background-color: #67CF22;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes stretchdelay {
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凑单品</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./less/brand-content.css">
+    <script src="./js/rem.js"></script>
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="#">
+            <img src="./images/header_logo.png" alt="">
+        </a>
+        <img src="./images/header_app.png" alt="">
+    </header>
+    <main id="main">
+        <section id="search">
+            <input type="search" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </section>
+        <nav id="nav">
+            <a href='/index.html'>首页</a>
+            >
+            <a href="./brandtitle.html">全部分类</a>
+            >
+        </nav>
+        <section class="tab">
+            <div id="segmentedControl" class="mui-segmented-control">
+                <a class="mui-control-item mui-active" href="#item1">
+                    商品品牌排行
+                </a>
+                <a class="mui-control-item" href="#item2">
+                    销量排行
+                </a>
+                <a class="mui-control-item" href="#item3">
+                    最新评论
+                </a>
+            </div>
+            <div>
+                <div id="item1" class="mui-control-content mui-active">
+                    <ul class="mui-table-view">
+
+                    </ul>
+                </div>
+                <div id="item2" class="mui-control-content">
+                    <ul class="mui-table-view">
+
+                    </ul>
+                </div>
+                <div id="item3" class="mui-control-content">
+                    <ul class="mui-table-view">
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="foot-top">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="javascript:0" class="btn-top">返回顶部</a>
+        </div>
+        <div class="foot-bottom">
+            <p><a href="#">手机APP下载</a> 慢慢买手机版--掌上比价平台</p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+</body>
+<script id="shop-top" type="html/text">
+    {{each result}}
+    <li class="mui-table-view-cell">
+            <a href="/productList.html?categoryid={{$value.categoryId}}&pageid=1">
+                    <span>{{$index+1}}</span>
+                    <div>
+                        <h2>{{$value.brandName}}</h2>
+                        <p>{{$value.brandInfo}}</p>
+                    </div>
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+        </li>
+    {{/each}}
+</script>
+<script id="list-tow" type="html/text">
+    {{each result}}
+    <li class="mui-table-view-cell">
+        <a href="/productDetails.html?productId={{$value.productId}}">
+            <div class="pic">
+                {{@$value.productImg}}
+            </div>
+            <div class="content">
+                <h2> {{$value.productName}}</h2>
+                <div class="paynum">
+                    <p>{{$value.productPrice}}</p>
+                    <span class="star"></span>
+                </div>
+                <div class="other">
+                    <span>{{$value.productQuote}}</span>
+                    <span>{{$value.productCom}}</span>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script id="list-xx" type="html/text">
+    {{each list}}
+    <li class="mui-table-view-cell">
+        <a href="/productDetails.html?productId={{productId}}">
+            <div class="comtitle">
+                {{@$value.productImg}}
+            </div>
+            <div class="comcontent">
+                <p>{{data[0].comName}}</p>
+                <div class="comtime">
+                    <span class="star"></span>
+                    <p>{{data[0].comTime}}</p>
+                </div>
+                <div class="content">
+                    {{data[0].comContent}}
+                </div>
+                <p class="form">
+                    {{data[0].comFrom}}
+                </p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/mui/js/mui.js"></script>
+<!-- <script>
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+    (function ($) {
+        $('#scroll').scroll({
+            indicators: true //是否显示滚动条
+        });
+        var segmentedControl = document.getElementById('segmentedControl');
+        $('.mui-input-group').on('change', 'input', function () {
+            if (this.checked) {
+                var styleEl = document.querySelector('input[name="style"]:checked');
+                var colorEl = document.querySelector('input[name="color"]:checked');
+                if (styleEl && colorEl) {
+                    var style = styleEl.value;
+                    var color = colorEl.value;
+                    segmentedControl.className = 'mui-segmented-control' + (style ? (
+                        ' mui-segmented-control-' + style) : '') + ' mui-segmented-control-' + color;
+                }
+            }
+        });
+    })(mui);
+</script> -->
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+<script src="./js/brand-content.js"></script>
+
+</html>

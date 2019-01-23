@@ -6,6 +6,12 @@ $(function(){
             categoryid:categoryid
         },
         success:function(data){
+            console.log(data);
+            
+            if(data.result.length==0){
+                alert('404')
+                return false;
+            }
             $('.thirdly').html(data.result[0].category);
             // categoryId: 101, category: "血压计", titleId: 6, 
             //_id: "5806e6ea48985cb016b0834d", __v: 0
@@ -98,7 +104,7 @@ $(function(){
 
                 $('.ontap').on('tap',function(){
                     var productid = $(this).data('productid');
-                    location = 'productDetails.html?categoryid='+categoryid+'&+productId='+productid
+                    location = 'productDetails.html?categoryid='+categoryid+'&productId='+productid
                 })
             }
         })

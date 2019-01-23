@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>凑单品</title>
+  <!-- <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <!-- <link rel="stylesheet/less" href="less/base.less"> -->
+  <link rel="stylesheet/less" href="less/gsproduct.less">
+  <script src="lib/less/less.js"></script>
+  <script src="js/rem.js"></script>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <div id="header">
+    <div class="left">
+      <a href="index.html" class="fa fa-chevron-left xiangshang" ></a>
+    </div>
+    <div class="center">凑单品</div>
+    <div class="right"><a href="https://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia"></a></div>
+  </div>
+  <!-- 主体部分 -->
+  <div id="top">
+    <div class="option">
+      <div class="zuobian">
+        <a href="#" class="yi">
+          <span class="weitchover">京东</span>
+          <i ></i>
+        </a>
+        <a href="#" class="er"> <span class="weitchover2">华原</span> <i></i></a>
+        <a href="#" class="san"> <span class="weitchover3">一元</span><i></i></a>
+      </div>
+      <ul></ul>
+      <a href="#" class="xiazai fa fa-bar-chart"></a>
+    </div>
+  <div class="exhibition"> 
+    <ul class="yincang1 yincang">
+     
+    </ul>
+    <ul class="yincang2 yincang">
+        
+    </ul>
+    <ul class="yincang3 yincang">
+          <li class="xuanze"><a href="#"><span>一元</span> <i style="display:block">√</i></a></li>
+    </ul></div>
+  </div>
+    <!-- 环形导航菜单 -->
+    <div class="mask hide"></div>
+	<div class="circle">
+		<div class="ring"><a href="category.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a> <a
+			 href="inlanddiscount.html" class="menuItem"></a> <a href="baicaijia.html" class="menuItem"></a> <a href="moneyctrl.html"
+			 class="menuItem"></a> <a href="coupon.html" class="menuItem"></a> <a href="gsproduct.html" class="menuItem"></a> <a
+			 href="index.html" class="menuItem"></a></div><a href="#" class="center"></a>
+	</div>
+  <main id="main">
+  <!-- <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+    <div class="mui-scroll"> -->
+        <ul class="xuanran">
+            <li>
+              <a href="#" class="details">
+                <img src="./images/ic_cu.png" alt="">
+                <p class="introduce">甘一客(21cake)专用餐具</p>
+                <p class="buy">
+                  <span class="price">¥0.05</span>
+                  <i>去凑单</i>
+                </p>
+              </a>
+            </li>
+            <li>
+                <a href="#" class="details">
+                  <img src="./images/ic_cu.png" alt="">
+                  <p class="introduce">甘一客(21cake)专用餐具</p>
+                  <p class="buy">
+                    <span class="price">¥0.05</span>
+                    <button>去凑单</button>
+                  </p>
+                </a>
+              </li>
+              <li>
+                  <a href="#" class="details">
+                    <img src="./images/ic_cu.png" alt="">
+                    <p class="introduce">甘一客(21cake)专用餐具</p>
+                    <p class="buy">
+                      <span class="price">¥0.05</span>
+                      <button>去凑单</button>
+                    </p>
+                  </a>
+                </li>
+                <li>
+                    <a href="#" class="details">
+                      <img src="./images/ic_cu.png" alt="">
+                      <p class="introduce">甘一客(21cake)专用餐具</p>
+                      <p class="buy">
+                        <span class="price">¥0.05</span>
+                        <button>去凑单</button>
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                      <a href="#" class="details">
+                        <img src="./images/ic_cu.png" alt="">
+                        <p class="introduce">甘一客(21cake)专用餐具</p>
+                        <p class="buy">
+                          <span class="price">¥0.05</span>
+                          <button>去凑单</button>
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                        <a href="#" class="details">
+                          <img src="./images/ic_cu.png" alt="">
+                          <p class="introduce">甘一客(21cake)专用餐具</p>
+                          <p class="buy">
+                            <span class="price">¥0.05</span>
+                            <button>去凑单</button>
+                          </p>
+                        </a>
+                      </li>
+                     
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li> -->
+          </ul>
+<!--     
+    </div>
+  </div> -->
+
+
+ </main>
+
+  <!-- 定位 -->
+  <a href="#top" class="position fa fa-rocket " aria-hidden="true">
+    
+  </a>
+  <script id="yiTpl" type="text/html">
+    {{ if result.length>0 }}
+    {{ each result value index }}
+    <li class="xuanze xuanze1" data-id="{{value.shopId}}" data-shop-name="{{value.shopName}}">
+      <a href="#">
+        <span>
+          {{ value.shopName }}
+        </span> 
+          <i class='{{index==0?"action":""}}'   data-iid="{{index}}">√ </i>
+      </a>
+    </li>
+    {{ /each }}
+    {{ /if }}
+  </script>
+  <script id="erTpl" type="text/html">
+    {{if result.length>0}}
+    {{each result value index}}
+    <li class="xuanze xuanze2" data-id="{{value.areaId}}" data-shop-name="{{value.areaName}}">
+      <a href="#" >
+        <span>
+          {{value.areaName}}
+        </span>  
+      <i class='{{index==0?"action":""}}' data-iid="{{index}}">√ </i>
+      </a>
+    </li>
+    {{/each}}
+    {{/if}}
+  </script>
+
+  <script id="mainTpl" type="text/html">
+    {{if result.length>0}}
+    {{each result value}}
+    <li>
+        <a href="javascript:" class="details" data-id="{{}}">
+          <img src="{{value.productImg}}" alt="">
+          <p class="introduce">{{value.productName}}</p>
+          <p class="buy">
+            <span class="price">{{value.productPrice}}</span>
+            <i>去凑单</i>
+          </p>
+        </a>
+      </li>
+    {{/each}}
+    {{/if}}
+  </script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="lib/mui/js/mui.min.js"></script>
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="js/gsproduct.js"></script>
+  <script src="js/base.js"></script>
+</body>
+
+</html>

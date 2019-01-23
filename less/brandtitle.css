@@ -1,0 +1,333 @@
+/* mmb的主题颜色 */
+/* a的颜色 */
+/* 边框颜色 */
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+body {
+  font-size: .12rem;
+  padding: .45rem 0 0 0;
+  height: 100vh;
+  max-width: 750px;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: #5a5a5a;
+}
+p {
+  color: #5a5a5a;
+}
+#header {
+  display: flex;
+  background-color: #fff;
+  height: .45rem;
+  padding: .1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  align-items: center;
+}
+#header .logo {
+  width: .8rem;
+}
+#header .logo img {
+  width: 100%;
+}
+#header form {
+  margin: 0 .1rem;
+  flex: 1;
+  position: relative;
+}
+#header form i {
+  top: .09rem;
+  left: .1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  display: block;
+  color: #b8b3b3;
+}
+#header form > input {
+  text-indent: 1em;
+  width: 100%;
+  height: .3rem;
+  border: 0px;
+  border-radius: .15rem;
+  background-color: #f4f7f3;
+  margin-bottom: 0rem;
+  font-size: .14rem;
+  text-align: left;
+}
+#header .download {
+  width: .38rem;
+  border: 1px solid #f85000;
+  height: .2rem;
+  border-radius: .2rem;
+  line-height: .2rem;
+  font-size: .11rem;
+  text-align: center;
+  color: #f85000;
+}
+#main {
+  /* 会在main里面添加一个区域滚动容器 MUI自带了绝对定位 可以main设置相对定位 让 mui-scroll-wrapper相对main去定位 */
+  position: relative;
+  /* 同时需要给main设置高度100% 让main在中间范围显示 继承body内容的高度 */
+  height: 100%;
+}
+/* 底部 */
+#footer {
+  margin-top: .1rem;
+  height: 1rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #232a34;
+}
+#footer .foot_top {
+  border-bottom: 1px solid #727272;
+  height: .34rem;
+  line-height: .34rem;
+  clear: both;
+  text-align: center;
+}
+#footer .foot_top a {
+  float: left;
+  font-size: .14rem;
+  border-right: 1px solid #727272;
+  text-align: center;
+  width: 30%;
+  color: #fff;
+  display: inline-block;
+}
+#footer .foot_top a:nth-child(3) {
+  border-right: none;
+}
+#footer .foot_bottom {
+  font-size: .12rem;
+  padding: .05rem 0;
+  color: #666;
+  text-align: center;
+}
+.circle {
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  top: 45px;
+  left: 0px;
+  z-index: 999;
+}
+.circle a {
+  background-size: 30px 30px;
+}
+.circle .ring {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0) rotate(-270deg);
+  transition: all 0.5s ease-out;
+}
+.circle .ring .menuItem {
+  border-radius: 50%;
+  color: #eeeeee;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  position: absolute;
+  text-align: center;
+  width: 30px;
+}
+.circle .ring > a:nth-child(1) {
+  background-image: url("../images/ic_search.png");
+}
+.circle .ring > a:nth-child(2) {
+  background-image: url("../images/ic_cu.png");
+}
+.circle .ring > a:nth-child(3) {
+  background-image: url("../images/ic_coudanpin.png");
+}
+.circle .ring > a:nth-child(4) {
+  background-image: url("../images/ic_bcj.png");
+}
+.circle .ring > a:nth-child(5) {
+  background-image: url("../images/haitao.png");
+}
+.circle .ring > a:nth-child(6) {
+  background-image: url("../images/ic_temai.png");
+}
+.circle .ring > a:nth-child(7) {
+  background-image: url("../images/ic_coudanpin.png");
+}
+.circle .ring > a:nth-child(8) {
+  background-image: url("../images/home.png");
+}
+.circle .center {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #b3b3b3;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-out;
+}
+.circle .open.ring {
+  left: -45px;
+  top: -45px;
+  opacity: 1;
+  width: 120px;
+  height: 120px;
+  transition: all 0.5s;
+  transform: scale(1) rotate(0deg);
+}
+.circle .open.center {
+  border-color: #aaaaaa;
+}
+.mask {
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+}
+.hide {
+  display: none;
+}
+#header {
+  background-color: red;
+  justify-content: space-between;
+}
+#header img {
+  width: .34rem;
+}
+#header a {
+  width: 1.85rem;
+  height: .25rem;
+}
+#header a img {
+  width: 100%;
+}
+#search {
+  height: .5rem;
+  background-color: #fff;
+  padding: .1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search input {
+  flex: 1;
+  height: 100%;
+  border-radius: .2rem;
+  text-indent: .1rem;
+  font-size: .14rem;
+  margin: 0 .1rem;
+}
+#search button {
+  width: .63rem;
+  height: .3rem;
+  border-radius: .2rem;
+  border: none;
+  background-color: #565656;
+  color: #fff;
+  font-size: .14rem;
+}
+#nav {
+  height: .35rem;
+  padding: .05rem;
+  padding-left: 0.1rem;
+  line-height: .25rem;
+  font-size: .14rem;
+}
+#nav a {
+  color: #000;
+}
+.page-header {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+.page-header h4 {
+  font-size: .14rem;
+  font-weight: 600;
+  padding-left: 10px;
+}
+#list .panel-title i {
+  float: right;
+}
+#list .panel-body {
+  padding: 0;
+}
+#list .panel-body .panel-body-list {
+  margin: 0;
+}
+#list .panel-body .panel-body-list li {
+  font-size: .12rem;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+#list .panel-body .panel-body-list li a {
+  display: block;
+  width: 100%;
+  line-height: 2.3;
+  padding-left: .15rem;
+  color: #000;
+}
+#main {
+  height: auto;
+}
+#footer {
+  background-color: #232a34;
+  position: static;
+}
+#footer .foot-top {
+  display: flex;
+  border-bottom: 1px solid #727272;
+}
+#footer .foot-top a {
+  width: 30%;
+  text-align: center;
+  line-height: .34rem;
+  color: #fff;
+}
+#footer .foot-top a:last-of-type {
+  width: 40%;
+}
+#footer .foot-top a:nth-last-of-type(2) {
+  border-left: 1px solid #727272;
+  border-right: 1px solid #727272;
+}
+#footer .foot-bottom {
+  height: .64rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+#footer .foot-bottom p {
+  margin: 0;
+  text-align: center;
+  font-size: .14rem;
+}
+#footer .foot-bottom p a {
+  color: #ff3040;
+}
+#footer .foot-bottom p:last-of-type {
+  font-size: .12rem;
+  color: #ccc;
+}

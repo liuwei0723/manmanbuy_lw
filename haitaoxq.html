@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买比价网--手机版</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+     <link rel="stylesheet/less" href="./less/haitaoxq.less">
+     <script src="./lib/less/less.js"></script>
+     <script src="js/rem.js"></script>
+</head>
+<body>
+    <!-- 脑壳 -->
+    <header id="header">
+        <div class="head" id="ct_100-headerApp">
+            <div class="back"><a href="moneyctrl.html" class="icon-back">&lt;</a></div>
+            <h1>海淘详情</h1>
+            <div class="home">
+                <a href="#">
+                <img src="images/header_app.png" width="32" alt="">
+                 </a>
+            </div>
+           
+        </div>
+    </header>
+    <!-- 身体 -->
+     <main id="main">
+         <div class="content">
+            
+           <div class="info">
+               <span class="one">京东商城</span>
+               <span class="two">10-22 13:28</span>
+               <span class="three">chenjin/ 慢慢买</span>
+               
+           </div>
+           <div class="xiangqing">
+                <img src="./images/gengduo.png" alt="">
+              <p>原价25.9一斤，凑满5件只要99元价格。文章，1984年6月26日出生于陕西省西安市，中国内地男演员、导演。2006年毕业于中央戏剧学院表演系。
+                    2004年参演电视剧《与青春有关的日子》，开始在影视圈崭露头角 [1]  。2005年拍摄古装剧《锦衣卫》。2007年主演赵宝刚导演的青春剧《奋斗》； [2]  同年，主演首部电影《走着瞧》。2008年主演滕华涛执导的电视剧《蜗居》，饰演80后城市青年小贝。 [1]  [3]  2009年，在电影《海洋天堂》中扮演自闭症患者王大福；同年参演抗战题材的电视剧《雪豹》 [4]  。2011年，主演的电视剧《裸婚时代》在各大卫视播出； [5]  2011年-2012年连续2年获得北京大学生电影节 [6-7]  最受大学生欢迎男演员奖。2012年，凭借电影《失恋33天》获得第31届大众电影百花奖最佳男主角奖； [8]  同年成立自己经营的北京君竹影视文化有限公司，并导演第一部影视作品《小爸爸》。2013年2月，主演的电影《西游·降魔篇》在全国上映。 [9] 
+                    2014年3月28日，主演的中韩合资文艺爱情片《我在路上最爱你》在全国上映。2014年12月18日，在姜文执导的动作喜剧片《一步之遥》中扮演武七一角。 [10]  2016年，主演电视剧《少帅》，饰演张学良 [11]  ；主演电视剧《剃刀边缘》 [12]  。7月15日导演的电影《陆垚知马俐》上映。 [13] 
+                    演艺事业外，文章也参与公益慈善 枣子紧实，入口甜爽。适合公司人多的买吧，价格还是不错的。
+                    
+                </p>   
+           </div>
+           <div class="price">
+                <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="西域美农新疆特产五星和田红枣250g*2">
+          </div>
+          <div class="diqu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>北京</span>
+                            <span class="text">有货</span>
+                        </a>
+                    </li>
+                    <li>
+                            <a href="#">
+                                <span>北京</span>
+                                <span class="text">有货</span>
+                            </a>
+                        </li>
+                        <li>
+                                <a href="#">
+                                    <span>北京</span>
+                                    <span class="text">有货</span>
+                                </a>
+                            </li>
+                </ul>
+          </div>
+          <div class="btn">
+              <a href="#">
+                   前往购买 
+              </a>
+          </div>
+          <div class="erweima">
+                <img src="./images/mmbweixin2.png" width="100%" height="auto" alt="">
+          </div>
+          <div class="pinglun">
+              <h3>发表评论</h3>
+              <textarea name="" id="" cols="20" rows="5"></textarea>
+              <button>发表评论</button>
+              <h3>最新评论</h3>
+          </div>   
+         </div>
+            
+     </main>
+
+    <!-- jio -->
+    <footer id="footer">
+        <div class="foot_top">
+            <a href="#">登录</a> <a href="#">注册</a>
+            <a href="#" style="width: 40%; border: 0;">
+                <i class="fa fa-arrow-up"></i>返回顶部</a>
+        </div>
+        <div class="foot_bottom">
+            <p>
+                <a href="#" style="color: #f85000;">手机APP下载</a>
+                <a href="#" style="color:#8f8f94">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+            </p>
+        </div>
+    </footer>
+    <script id="haitaoxqtpl" type="text/html">  
+        
+ {{each result value}}       
+ <div class="info">
+        <span class="one">{{value.productFrom}}</span>
+        <span class="two">{{value.productTime}}</span>
+        <span class="three">{{value.productTips}}</span>
+        
+    </div>
+    <div class="xiangqing">
+         {{@value.productImg2}}
+       <p> 
+     {{@value.productInfo2}}   
+         </p>   
+    </div>
+    <div class="price">
+            {{@value.productImg2}} 
+   </div>
+   <div class="diqu">
+         {{@value.productCity}} 
+   </div>
+   <div class="btn">
+       <a href="#">
+            前往购买 
+       </a>
+   </div>
+   <div class="erweima">
+         <img src="./images/mmbweixin2.png" width="100%" height="auto" alt="">
+   </div>
+   <div class="pinglun">
+        {{@value.productComment}}
+   </div>   
+       </div>  
+ {{/each}}
+</script> 
+
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 公共组件 -->
+    <script src="js/tool.js"></script>
+    <!-- 你自己的js文件 -->
+    <script src="./js/haitaoxq.js"></script>
+</body>
+
+</html>
+ 

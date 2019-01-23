@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>只要白菜价</title>
+
+    <link rel="icon" href="./images/icon.icon">
+    <script src="js/rem.js"></script>
+    <!-- 引入mui框架  -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./lib/swiper-4.1.6/dist/css/swiper.css">
+    <!-- 引入本页面样式 -->
+    <link rel="stylesheet/less" href="./less/baicaijia.less">
+    <!--  引入less文件 -->
+    <script src="./lib/less/less.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="bcj-header" id="header">
+            <div class="left">
+                <a href="index.html" class="fa fa-chevron-left"></a>
+            </div>
+            <div class="center">
+                <h1>白菜价-淘宝内部券</h1>
+                <span class="font-icon font-icon-sousuo1"></span>
+            </div>
+            <div class="right">
+                <a href="#">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+        </header>
+<!-- 123 -->
+    <main id="main">
+        
+        
+        <section id="nav">
+           
+            <div class="swiper-container swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+        <section id="bcProduct">
+            <div class="productList">
+                <!-- <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-4 left">
+                            <a href="">
+                                <img src="./images/haitao.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xs-8 right">
+                            <p class="title">包邮</p>
+                            <div class="price">
+                                <span class="newPrice">￥0.0</span>
+                                <del class="oldPrice">￥0</del>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+                                    0%
+                                </div>
+                                
+                            </div>
+                            <span class="total">已领82张</span>
+                            <div class="link">
+                                <a href="" class="money">点此另15元优惠券</a>
+                                <a href="" class="goshopping">下单链接</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    
+    <!-- 底部栏 -->
+    <footer id="footer">
+            <div class="foot_top">
+                <a href="login.aspx">登录</a> <a href="reg.aspx">注册</a>
+                <a href="#" style="width: 40%; border: 0;">
+                    <i class="fa fa-arrow-up"></i>返回顶部</a>
+            </div>
+            <div class="foot_bottom">
+                <p>
+                    <a href="#" style="color: #f85000;">手机APP下载</a>
+                    <a href="#" style="color:#8f8f94">
+                        慢慢买手机版</a> -- 掌上比价平台</p>
+                <p>
+                    m.manmanbuy.com
+                </p>
+            </div>
+        </footer>
+    <div class="mask hide"></div>
+    <div class="circle">
+        <div class="ring"><a href="category.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a>
+            <a href="inlanddiscount.html" class="menuItem"></a> <a href="baicaijia.html" class="menuItem"></a> <a href="moneyctrl.html"
+                class="menuItem"></a> <a href="coupon.html" class="menuItem"></a> <a href="gsproduct.html" class="menuItem"></a>
+            <a href="index.html" class="menuItem"></a></div><a href="##" class="center"></a>
+    </div>
+
+    <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/swiper-4.1.6/dist/js/swiper.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="js/baicaijia.js"></script>
+    <script src="./js/tool.js"></script>
+</body>
+</html>
+<script type="text/html" id="navTmp">
+        {{each result as value i}}
+            <div class="swiper-slide"><a href="" class="{{value.titleId==0?'active':''}}" data-id="{{value.titleId}}">{{value.title}}</a></div>
+        {{/each}}
+</script>
+    <script type="text/html" id="categoryTmp">
+        {{each result as value i}}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4 left">
+                    <a href="#" data-id="{{value.productId}}">
+                        {{#value.productImg}}
+                    </a>
+                </div>
+                <div class="col-xs-8 right">
+                    {{#value.productName}}
+                    <div class="price">
+                        {{#value.productPrice}}
+                    </div>
+                    <div class="progress">
+                        {{#value.productCouponRemain
+                        }}
+                        
+                    </div>
+                    
+                    <div class="link">
+                        {{#value.productCoupon}}
+                        {{#value.productHref}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>

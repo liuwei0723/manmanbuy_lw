@@ -1,0 +1,294 @@
+/* mmb的主题颜色 */
+/* a的颜色 */
+/* 边框颜色 */
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+body {
+  font-size: 12px;
+  background-color: #fff;
+  height: 100vh;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: #5a5a5a;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: #fff;
+  height: 100vh;
+}
+#header {
+  display: flex;
+  width: 100%;
+  z-index: 998;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .44rem;
+  background-color: #f4483e;
+  padding: 0;
+  line-height: .44rem;
+}
+#header .left {
+  flex: 1;
+  width: .44rem;
+}
+#header .left a {
+  display: block;
+  color: #fff;
+  font-size: .2rem;
+  text-align: center;
+}
+#header .coment {
+  flex: 10;
+  text-align: center;
+}
+#header .coment p {
+  font-size: 0.22rem;
+  margin: 0;
+  color: #fff;
+}
+#header .right {
+  flex: 1;
+  padding: 0 .07rem;
+}
+#header .right a img {
+  max-height: .34rem;
+  overflow: hidden;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: .14rem;
+}
+#main ul {
+  height: 100%;
+  overflow: hidden;
+}
+#main ul li {
+  float: left;
+  list-style: none;
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: .05rem;
+  margin-top: .05rem;
+}
+#main ul li a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-top: .1rem;
+  border: 1px solid #ccc;
+}
+#main ul li a img {
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  border: 2px solid #d72d3e;
+  display: inline-block;
+}
+#main ul li a p {
+  padding-top: .05rem;
+  color: #000;
+}
+#main ul #jump {
+  width: 100%;
+  margin: .2rem 0;
+  height: .35rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  line-height: .35rem;
+  background: #ddd;
+  padding-left: .10rem;
+}
+#main ul #jump a {
+  color: #000;
+  font-size: 14px;
+}
+#main ul #footer {
+  margin-top: .1rem;
+  height: 1rem;
+  width: 100%;
+  position: static;
+  bottom: 0;
+  left: 0;
+  background: #232a34;
+}
+#main ul #footer .foot_top {
+  border-bottom: 1px solid #727272;
+  height: .34rem;
+  line-height: .34rem;
+  clear: both;
+  text-align: center;
+}
+#main ul #footer .foot_top a {
+  float: left;
+  font-size: .14rem;
+  border-right: 1px solid #727272;
+  text-align: center;
+  width: 30%;
+  color: #fff;
+  display: inline-block;
+}
+#main ul #footer .foot_top a:nth-child(3) {
+  border-right: none;
+}
+#main ul #footer .foot_bottom {
+  font-size: .12rem;
+  padding: .05rem 0;
+  color: #666;
+  text-align: center;
+}
+#main #jump {
+  width: 100%;
+  margin: .2rem 0;
+  height: .35rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  line-height: .35rem;
+  background: #ddd;
+  padding-left: .10rem;
+}
+#main #jump a {
+  color: #000;
+  font-size: 14px;
+}
+#main #footer {
+  margin-top: .1rem;
+  height: 1rem;
+  width: 100%;
+  position: static;
+  bottom: 0;
+  left: 0;
+  background: #232a34;
+}
+#main #footer .foot_top {
+  border-bottom: 1px solid #727272;
+  height: .34rem;
+  line-height: .34rem;
+  clear: both;
+  text-align: center;
+}
+#main #footer .foot_top a {
+  float: left;
+  font-size: .12rem;
+  border-right: 1px solid #727272;
+  text-align: center;
+  width: 30%;
+  color: #fff;
+  display: inline-block;
+}
+#main #footer .foot_top a:nth-child(3) {
+  border-right: none;
+}
+#main #footer .foot_bottom {
+  font-size: .12rem;
+  padding: .05rem 0;
+  color: #666;
+  text-align: center;
+}
+#main #footer .foot_bottom p {
+  margin: 0;
+}
+.circle {
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  top: 45px;
+  left: 0px;
+  z-index: 999;
+}
+.circle a {
+  background-size: 30px 30px;
+}
+.circle .ring {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0) rotate(-270deg);
+  transition: all 0.5s ease-out;
+}
+.circle .ring .menuItem {
+  border-radius: 50%;
+  color: #eeeeee;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  position: absolute;
+  text-align: center;
+  width: 30px;
+}
+.circle .ring > a:nth-child(1) {
+  background-image: url("../images/ic_search.png");
+}
+.circle .ring > a:nth-child(2) {
+  background-image: url("../images/ic_cu.png");
+}
+.circle .ring > a:nth-child(3) {
+  background-image: url("../images/ic_coudanpin.png");
+}
+.circle .ring > a:nth-child(4) {
+  background-image: url("../images/ic_bcj.png");
+}
+.circle .ring > a:nth-child(5) {
+  background-image: url("../images/haitao.png");
+}
+.circle .ring > a:nth-child(6) {
+  background-image: url("../images/ic_temai.png");
+}
+.circle .ring > a:nth-child(7) {
+  background-image: url("../images/ic_coudanpin.png");
+}
+.circle .ring > a:nth-child(8) {
+  background-image: url("../images/home.png");
+}
+.circle .center {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #b3b3b3;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-out;
+}
+.circle .open.ring {
+  left: -45px;
+  top: -45px;
+  opacity: 1;
+  width: 120px;
+  height: 120px;
+  transition: all 0.5s;
+  transform: scale(1) rotate(0deg);
+}
+.circle .open.center {
+  border-color: #aaaaaa;
+}
+.mask {
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+}
+.hide {
+  display: none;
+}

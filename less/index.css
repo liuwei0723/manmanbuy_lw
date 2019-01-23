@@ -1,0 +1,357 @@
+/* mmb的主题颜色 */
+/* a的颜色 */
+/* 边框颜色 */
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+body {
+  font-size: .12rem;
+  padding: .45rem 0 0 0;
+  height: 100vh;
+  max-width: 750px;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: #5a5a5a;
+}
+p {
+  color: #5a5a5a;
+}
+#header {
+  display: flex;
+  background-color: #fff;
+  height: .45rem;
+  padding: .1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  align-items: center;
+}
+#header .logo {
+  width: .8rem;
+}
+#header .logo img {
+  width: 100%;
+}
+#header form {
+  margin: 0 .1rem;
+  flex: 1;
+  position: relative;
+}
+#header form i {
+  top: .09rem;
+  left: .1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  display: block;
+  color: #b8b3b3;
+}
+#header form > input {
+  text-indent: 1em;
+  width: 100%;
+  height: .3rem;
+  border: 0px;
+  border-radius: .15rem;
+  background-color: #f4f7f3;
+  margin-bottom: 0rem;
+  font-size: .14rem;
+  text-align: left;
+}
+#header .download {
+  width: .38rem;
+  border: 1px solid #f85000;
+  height: .2rem;
+  border-radius: .2rem;
+  line-height: .2rem;
+  font-size: .11rem;
+  text-align: center;
+  color: #f85000;
+}
+#main {
+  /* 会在main里面添加一个区域滚动容器 MUI自带了绝对定位 可以main设置相对定位 让 mui-scroll-wrapper相对main去定位 */
+  position: relative;
+  /* 同时需要给main设置高度100% 让main在中间范围显示 继承body内容的高度 */
+  height: 100%;
+}
+/* 底部 */
+#footer {
+  margin-top: .1rem;
+  height: 1rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #232a34;
+}
+#footer .foot_top {
+  border-bottom: 1px solid #727272;
+  height: .34rem;
+  line-height: .34rem;
+  clear: both;
+  text-align: center;
+}
+#footer .foot_top a {
+  float: left;
+  font-size: .14rem;
+  border-right: 1px solid #727272;
+  text-align: center;
+  width: 30%;
+  color: #fff;
+  display: inline-block;
+}
+#footer .foot_top a:nth-child(3) {
+  border-right: none;
+}
+#footer .foot_bottom {
+  font-size: .12rem;
+  padding: .05rem 0;
+  color: #666;
+  text-align: center;
+}
+.circle {
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  top: 45px;
+  left: 0px;
+  z-index: 999;
+}
+.circle a {
+  background-size: 30px 30px;
+}
+.circle .ring {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0) rotate(-270deg);
+  transition: all 0.5s ease-out;
+}
+.circle .ring .menuItem {
+  border-radius: 50%;
+  color: #eeeeee;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  position: absolute;
+  text-align: center;
+  width: 30px;
+}
+.circle .ring > a:nth-child(1) {
+  background-image: url("../images/ic_search.png");
+}
+.circle .ring > a:nth-child(2) {
+  background-image: url("../images/ic_cu.png");
+}
+.circle .ring > a:nth-child(3) {
+  background-image: url("../images/ic_coudanpin.png");
+}
+.circle .ring > a:nth-child(4) {
+  background-image: url("../images/ic_bcj.png");
+}
+.circle .ring > a:nth-child(5) {
+  background-image: url("../images/haitao.png");
+}
+.circle .ring > a:nth-child(6) {
+  background-image: url("../images/ic_temai.png");
+}
+.circle .ring > a:nth-child(7) {
+  background-image: url("../images/ic_coudanpin.png");
+}
+.circle .ring > a:nth-child(8) {
+  background-image: url("../images/home.png");
+}
+.circle .center {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #b3b3b3;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-out;
+}
+.circle .open.ring {
+  left: -45px;
+  top: -45px;
+  opacity: 1;
+  width: 120px;
+  height: 120px;
+  transition: all 0.5s;
+  transform: scale(1) rotate(0deg);
+}
+.circle .open.center {
+  border-color: #aaaaaa;
+}
+.mask {
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+}
+.hide {
+  display: none;
+}
+#main #nav {
+  margin-top: .1rem;
+}
+#main #nav .rows {
+  padding: 0 0 10px 0;
+  background-color: #fff;
+}
+#main #nav .rows .btn-more {
+  width: 25%;
+  text-align: center;
+  float: left;
+  overflow: hidden;
+  margin-top: 15px;
+}
+#main #nav .rows .btn-more a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#main #nav .rows .btn-more a img {
+  width: .5rem;
+}
+#main #nav .rows .btn-more a p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+#main #nav > .rows > .btn-more:nth-child(1) {
+  animation: bounceInDown 1s ease-in-out both;
+}
+#main #nav > .rows > .btn-more:nth-child(2) {
+  animation: bounceInDown 1s 0.2s ease-in-out both;
+}
+#main #nav > .rows > .btn-more:nth-child(3) {
+  animation: bounceInDown 1s 0.4s ease-in-out both;
+}
+#main #nav > .rows > .btn-more:nth-child(4) {
+  animation: bounceInDown 1s 0.6s ease-in-out both;
+}
+#main #nav > .rows > .btn-more:nth-child(5) {
+  animation: bounceInDown 1s 0.8s ease-in-out both;
+}
+#main #nav > .rows > .btn-more:nth-child(6) {
+  animation: bounceInDown 1s 1s ease-in-out both;
+}
+#main #nav > .rows > .btn-more:nth-child(7) {
+  animation: bounceInDown 1s 1.2s ease-in-out both;
+}
+#main #nav > .rows > .btn-more:nth-child(8) {
+  animation: bounceInDown 1s 1.4s ease-in-out both;
+}
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+#main #productList {
+  padding-bottom: 1rem;
+}
+#main #productList .title {
+  height: 35px;
+  background-color: #ff4e49;
+  /* background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000)); */
+  border-bottom: 1px solid #ffc881;
+  line-height: 35px;
+  overflow: hidden;
+  color: #fff;
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  clear: both;
+}
+#main #productList .title span {
+  font-weight: 400;
+  font-size: 16px;
+}
+#main #productList .title img {
+  float: right;
+  margin-right: 10px;
+  color: #fff;
+  margin-top: 8px;
+}
+#main #productList .content ul li {
+  padding: .1rem .08rem;
+  border-bottom: 1px solid #dddbdb;
+}
+#main #productList .content ul li a {
+  display: flex;
+}
+#main #productList .content ul li a .left {
+  width: 120px;
+}
+#main #productList .content ul li a .left img {
+  width: 106px;
+}
+#main #productList .content ul li a .right {
+  flex: 1;
+  padding: .05rem 0;
+}
+#main #productList .content ul li a .right .product-from {
+  margin-top: .2rem;
+}
+#main #productList .content ul li a .right .product-from i,
+#main #productList .content ul li a .right .product-from .comm {
+  float: right;
+}
+#main #productList .content ul li a .right .product-from i {
+  margin-right: .05rem;
+}
+#main #productList .content ul li a .right .product-from .comm {
+  margin-right: .1rem;
+}
+#main #productList .content .more-bar {
+  text-align: center;
+  width: 100%;
+}
+#main #productList .content .more-bar a {
+  display: block;
+  line-height: 30px;
+  background: #f4f4f4;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

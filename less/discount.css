@@ -1,0 +1,195 @@
+body {
+  height: 100vh;
+  padding: 0rem .15rem 0 .15rem;
+  background-color: #fff !important;
+}
+#main {
+  padding: 0 .15rem 0 .15rem;
+  background-color: #fff;
+  height: auto;
+  margin-top: .44rem;
+  position: relative;
+}
+#main .title {
+  color: #999;
+  font-size: .12rem;
+  padding: .2rem 0;
+}
+#main .main-conter .main-right {
+  width: 1.2rem;
+  height: 1.2rem;
+  float: right;
+}
+#main .main-conter .main-right img {
+  width: 100%;
+  height: 100%;
+}
+#main .main-conter .main-left p {
+  font-size: .16rem;
+  color: #606060;
+  line-height: .26rem;
+}
+#main .main-conter .main-left img {
+  width: 100%;
+}
+#main .main-conter #disstorck {
+  list-style: none;
+  box-shadow: 0 0 2px #999;
+  width: 1.36rem;
+  display: block;
+  margin: 0 auto;
+  padding: .1rem;
+}
+#main .main-conter #disstorck li {
+  width: 1.16rem;
+  height: .21rem;
+  border-bottom: 1px solid #999;
+}
+#main .main-conter #disstorck li a {
+  font-size: .12rem;
+}
+#main .main-conter #disstorck li a strong {
+  font-size: .12rem;
+  color: #f27b04;
+  float: right;
+}
+#main .main-conter button {
+  width: 100%;
+}
+#main .main-conter > img {
+  width: 100%;
+  padding: .2rem 0;
+}
+#main .comment .tit {
+  font-size: .18rem;
+}
+#main .comment .reply .form {
+  height: 1.16rem;
+}
+#main .comment .reply .form textarea {
+  width: 100%;
+  height: .68rem;
+  margin-bottom: 0;
+}
+#main .comment .reply .form .tjdp {
+  float: right;
+}
+#main .comment .list ul {
+  list-style: none;
+  padding-bottom: .25rem;
+  padding: .25rem;
+}
+#main .comment .list ul li {
+  padding-bottom: .35rem;
+  height: auto;
+  display: flex;
+}
+#main .comment .list ul li .userimg img {
+  width: .4rem;
+  height: .4rem;
+  border-radius: .2rem;
+  float: none;
+}
+#main .comment .list ul li .con {
+  flex: 1;
+  padding-left: .15rem;
+  position: relative;
+}
+#main .comment .list ul li .con .username {
+  color: #5997c0;
+  font-size: .13rem;
+  line-height: .13rem;
+}
+#main .comment .list ul li .con .time {
+  color: #999;
+  font-size: .13rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#main .comment .list ul li .con .content {
+  white-space: normal;
+  color: #606060;
+  font-size: .15rem;
+}
+#foot {
+  background-color: #333;
+}
+#foot .mui-row .mui-col-xs-4 {
+  box-shadow: 0 0 2px #727272;
+  height: .34rem;
+}
+#foot .mui-row .mui-col-xs-4 a {
+  color: #fff;
+  font-size: .14rem;
+  display: block;
+  text-align: center;
+  line-height: .34rem;
+}
+#foot .last {
+  height: .7rem;
+  padding: .15rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#foot .last p {
+  line-height: .1rem;
+}
+#foot .last p a {
+  color: #ff4e49;
+}
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 10px;
+}
+.spinner > div {
+  background-color: #67CF22;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+@-webkit-keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}

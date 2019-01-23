@@ -1,51 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>慢慢买比价网--手机版</title>
+    <title>慢慢买比价网</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- rem -->
     <script src="js/rem.js"></script>
     <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css">
     <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
     <!-- 公共样式 -->
-    <link rel="stylesheet/less" href="less/base.less">
+    <link rel="stylesheet/less" href="less/index.less">
     <script src="lib/less/less.js"></script>
+
     <!-- 你自己的样式 -->
- 
+
 </head>
 
 <body>
     <!-- 脑壳 -->
     <header id="header">
         <a href="#" title="" class="logo">
-            <img src="images/mlogo.png" alt="">
+            <img src="http://static.manmanbuy.com/m/img/mlogo.png" alt="">
         </a>
         <form action="#">
-            <i class="mui-icon mui-icon-search"></i>
-            <input type="search" name="" placeholder="商品比价、查历史价" class="">
+            <i class="fa fa-search"></i>
+            <input type="search" name="" placeholder="商品比价、查历史价">
         </form>
         <a href="#" title="" class="download">
             下载
         </a>
     </header>
+
+
     <!-- 身体 -->
     <main id="main">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--这里放置真实显示的DOM内容-->
+                <!-- 轮播图 -->
+                <section id="slide">
+                    <div class="mui-slider">
+                        <div class="mui-slider-group mui-slider-loop">
+                            <!--支持循环，需要重复图片节点-->
+                            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/banner05.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img src="images/banner01.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img src="images/banner02.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img src="images/banner03.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img src="images/banner04.jpg" /></a></div>
+                            <div class="mui-slider-item"><a href="#"><img src="images/banner05.jpg" /></a></div>
+                            <!--支持循环，需要重复图片节点-->
+                            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/banner01.jpg" /></a></div>
+                        </div>
+                        <div class="mui-slider-indicator">
+                            <div class="mui-indicator mui-active"></div>
+                            <div class="mui-indicator"></div>
+                            <div class="mui-indicator"></div>
+                            <div class="mui-indicator"></div>
+                            <div class="mui-indicator"></div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- 导航 -->
+                <section id="nav">
+                    <div class="mui-row rows">
+
+
+                    </div>
+                </section>
+                <div id="productList">
+                    <div class="title">
+                        <span>超值折扣推荐</span><img src="images/more.png" width="20" height="20">
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="left">
+                                        <img src="http://wnzk-img.zuyushop.com/r_img/img/20181029/16/4ea84814d68341d2a9bf39105d3cec26.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="right">
+                                        <p class="product-name">
+                                            <span>双11预售：鸿星尔克 男童棉马甲89元包邮 （付20元定金立减40元</span>
+                                        </p>
+                                        <div class="product-from">
+                                            <span>天猫商城 | 10-29 17:04</span>
+                                            <span class="comm">0</span>
+
+                                            <i class="fa fa-commenting-o"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="more-bar"><a href="moneyctrl.html">更多优惠信息 »</a></div>
+                    </div>
+                </div>
+                <!-- 底部 -->
+                <footer id="footer">
+                    <div class="foot_top">
+                        <a href="login.aspx">登录</a> <a href="reg.aspx">注册</a>
+                        <a href="#" class="btn-back">
+                            <i class="fa fa-arrow-up"></i>返回顶部</a>
+                    </div>
+                    <div class="foot_bottom">
+                        <p>
+                            <a href="#" style="color: #f85000;">手机APP下载</a>
+                            <a href="#" style="color:#8f8f94">
+                                慢慢买手机版</a> -- 掌上比价平台</p>
+                        <p>
+                            m.manmanbuy.com
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
     </main>
 
-    <!-- jio -->
-    <footer id="footer">
 
-    </footer>
+
+    <!-- 环形导航菜单 -->
+    <div class="mask hide"></div>
+    <div class="circle">
+        <div class="ring"><a href="category.html" class="menuItem"></a> <a href="moneyctrl.html" class="menuItem"></a>
+            <a href="inlanddiscount.html" class="menuItem"></a> <a href="baicaijia.html" class="menuItem"></a> <a href="moneyctrl.html"
+                class="menuItem"></a> <a href="coupon.html" class="menuItem"></a> <a href="gsproduct.html" class="menuItem"></a>
+            <a href="index.html" class="menuItem"></a></div><a href="#" class="center"></a>
+    </div>
+
+
+    <!-- 首页菜单栏api渲染 -->
+    <script id="indexMenuTpl" type="text/html">
+        {{each result value index}}
+        <div class="mui-col-xs-3 btn-more" data-id='{{value.indexmenuId}}'>
+            <a href="{{index==7?'javascript:':result[index].titlehref}}" title="">
+                <!-- 标签属于富文本 丰富的文本 当前的标签属于富文本 -->
+                <!-- 如果要解析富文本需要带@符号 -->
+                {{@value.img}}
+                <p>{{value.name}}</p>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+
+    <!-- 折扣列表中的数据渲染 -->
+    <script id="moneyCtrlTpl" type="text/html">
+        {{each result value}}
+        <li>
+            <a href="#">
+                <div class="left">
+                    {{@value.productImgSm}}
+                </div>
+                <div class="right">
+                    <p class="product-name">
+                        {{value.productName}}
+                        <span>{{value.productPinkage}}</span>
+                    </p>
+                    <div class="product-from">
+                        <span>{{value.productFrom}} | {{value.productTime}}</span>
+                        <span class="comm">{{value.productComCount.replace('有','').replace('人评论','')}}</span>
+                        
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
 
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/zepto/fx.js"></script>
+    <script src="lib/zepto/fx_methods.js"></script>
+    <!-- <script src="lib/jquery/jquery-1.12.4.js"></script> -->
+
     <script src="lib/artTemplate/template-web.js"></script>
+
     <!-- 公共组件 -->
-    <script src="js/tool.js"></script>
+    <!-- <script src="js/tool.js"></script> -->
     <!-- 你自己的js文件 -->
+    <script src="js/index.js"></script>
+    <script src="js/base.js"></script>
+
 </body>
 
 </html>

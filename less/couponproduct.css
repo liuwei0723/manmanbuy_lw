@@ -1,0 +1,213 @@
+/* mmb的主题颜色 */
+/* a的颜色 */
+/* 边框颜色 */
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+body {
+  font-size: 12px;
+  background-color: #fff;
+  height: 100vh;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: #5a5a5a;
+}
+li {
+  list-style: none;
+}
+#header {
+  display: flex;
+  width: 100%;
+  z-index: 998;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .44rem;
+  background-color: #f4483e;
+  line-height: .44rem;
+}
+#header .left {
+  flex: 1;
+  width: .44rem;
+}
+#header .left a {
+  display: block;
+  color: #fff;
+  font-size: .2rem;
+  text-align: center;
+}
+#header .coment {
+  flex: 10;
+  text-align: center;
+}
+#header .coment p {
+  font-size: 0.22rem;
+  margin: 0;
+  color: #fff;
+}
+#header .right {
+  flex: 1;
+  padding: 0 .07rem;
+}
+#header .right a img {
+  max-height: .34rem;
+  overflow: hidden;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  margin-top: .44rem;
+  position: relative;
+  margin-bottom: .44rem;
+}
+#main #Tisch {
+  text-align: center;
+  width: 100%;
+  height: .25rem;
+  position: fixed;
+  top: 0;
+  z-index: 998;
+  line-height: .25rem;
+}
+#main p {
+  font-size: 13px;
+  font-family: "锟斤拷锟斤拷";
+  color: #bbb;
+}
+#main ul {
+  padding-top: .25rem;
+}
+#main ul li a {
+  display: flex;
+  width: 100%;
+  padding: 8px;
+  border-bottom: 1px solid #e6e6e6;
+}
+#main ul li a .left {
+  flex: 3;
+  width: 1rem;
+  border: 1px solid #ccc;
+  height: 1rem;
+  margin-right: .1rem;
+}
+#main ul li a .left img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#main ul li a .right {
+  flex: 7;
+}
+#main ul li a .right p {
+  margin: 0;
+}
+#main ul li a .right .time {
+  display: flex;
+  justify-content: space-between;
+  color: #EE7700;
+}
+#main ul li a .right .time span {
+  font-size: .26rem;
+  color: #ccc;
+  margin-right: 12px;
+}
+#main #jump {
+  width: 100%;
+  margin: .2rem 0;
+  height: .35rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  line-height: .35rem;
+  background: #ddd;
+  padding-left: .10rem;
+}
+#main #jump a {
+  color: #000;
+  font-size: 14px;
+}
+#main #footer {
+  margin-top: .1rem;
+  height: 1rem;
+  width: 100%;
+  position: static;
+  bottom: 0;
+  left: 0;
+  background: #232a34;
+}
+#main #footer .foot_top {
+  border-bottom: 1px solid #727272;
+  height: .34rem;
+  line-height: .34rem;
+  clear: both;
+  text-align: center;
+}
+#main #footer .foot_top a {
+  float: left;
+  font-size: .12rem;
+  border-right: 1px solid #727272;
+  text-align: center;
+  width: 30%;
+  color: #fff;
+  display: inline-block;
+}
+#main #footer .foot_top a:nth-child(3) {
+  border-right: none;
+}
+#main #footer .foot_bottom {
+  font-size: .12rem;
+  padding: .05rem 0;
+  color: #666;
+  text-align: center;
+}
+#main #footer .foot_bottom p {
+  margin: 0;
+}
+.mask2 {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+}
+.mask2 .error {
+  width: .2rem;
+  height: .2rem;
+  line-height: .2rem;
+  text-align: center;
+  border-radius: 50%;
+  background: whitesmoke !important;
+  border: 1px solid white;
+  font-size: .2rem;
+  position: absolute;
+  right: .2rem;
+  top: .2rem;
+  cursor: pointer;
+}
+.mask2 .maskimg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.mask2 .maskimg img {
+  width: 2rem;
+  height: 1.6rem;
+}
+.mask {
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+}
+.hide {
+  display: none;
+}

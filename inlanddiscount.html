@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买比价网--手机版</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+     <link rel="stylesheet/less" href="./less/discount.less">
+     <script src="./lib/less/less.js"></script>
+     <script src="js/rem.js"></script>
+</head>
+<body>
+    <!-- 脑壳 -->
+    <header id="header">
+        <div class="head" id="ct_100-headerApp">
+            <div class="back"><a href="index.html" class="icon-back">&lt;</a></div>
+            <h1>国内折扣</h1>
+            <div class="home">
+                <a href="#">
+                <img src="images/header_app.png" width="32" alt="">
+                 </a>
+            </div>      
+        </div>
+    </header>
+    <!-- 身体 -->
+    <main id="main">
+        <div class="content">
+            <ul>
+            <li class="border-img">
+            <a href="discount-product.html?productid=1">
+                <div class="img"> 
+                    <img src="http://image3.suning.cn/uimg/b2c/newcatentries/0000000000-000000000123129054_1_200x200.jpg">
+                 </div>
+                                <p class="title">Apple iPhone 6 64GB 金色 移动联通电信4G手机</p>
+                                <p class="subtit">4088.00</p>
+                                <p class="info">苏宁易购 | 10-22 13:29</p>
+            </a>
+            </li>
+            <li class="border-img">
+                        <a href="discount-product.html?productid=1">
+                            <div class="img"> 
+                                <img src="http://image3.suning.cn/uimg/b2c/newcatentries/0000000000-000000000123129054_1_200x200.jpg">
+                             </div>
+                                            <p class="title">Apple iPhone 6 64GB 金色 移动联通电信4G手机</p>
+                                            <p class="subtit">4088.00</p>
+                                            <p class="info">苏宁易购 | 10-22 13:29</p>
+                        </a>
+            </li>
+            <li class="border-img">
+                    <a href="discount-product.html?productid=1">
+                        <div class="img"> 
+                            <img src="http://image3.suning.cn/uimg/b2c/newcatentries/0000000000-000000000123129054_1_200x200.jpg">
+                         </div>
+                                        <p class="title">Apple iPhone 6 64GB 金色 移动联通电信4G手机</p>
+                                        <p class="subtit">4088.00</p>
+                                        <p class="info">苏宁易购 | 10-22 13:29</p>
+                    </a>
+            </li>
+            <li class="border-img">
+                    <a href="discount-product.html?productid=1">
+                        <div class="img"> 
+                            <img src="http://image3.suning.cn/uimg/b2c/newcatentries/0000000000-000000000123129054_1_200x200.jpg">
+                         </div>
+                                        <p class="title">Apple iPhone 6 64GB 金色 移动联通电信4G手机</p>
+                                        <p class="subtit">4088.00</p>
+                                        <p class="info">苏宁易购 | 10-22 13:29</p>
+                    </a>
+            </li>
+            </ul>
+        </div>
+            
+    </main>
+
+    <!-- jio -->
+    <footer id="footer">
+        <div class="foot_top">
+            <a href="#">登录</a> <a href="#">注册</a>
+            <a href="#" style="width: 40%; border: 0;">
+                <i class="fa fa-arrow-up"></i>返回顶部</a>
+        </div>
+        <div class="foot_bottom">
+            <p>
+                <a href="#" style="color: #f85000;">手机APP下载</a>
+                <a href="#" style="color:#8f8f94">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+            </p>
+        </div>
+    </footer>
+ <!-- 渲染页面 -->
+ <script id="discounttpl" type="text/html">
+{{each result value index}}
+<li class="border-img">
+        <a href="product.html?id={{value.productId}}">
+            <div class="img"> 
+               {{@value.productImg}}
+             </div>
+                <p class="title">{{value.productName}}</p>
+                <p class="subtit">{{value.productPrice}}</p>
+                <p class="info">{{value.productFrom}} | {{value.productTime}}</p>
+        </a>
+        </li>
+        {{/each}}
+</script>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 公共组件 -->
+    <script src="js/tool.js"></script>
+    <!-- 你自己的js文件 -->
+    <script src="./js/discount.js"></script>
+</body>
+
+</html>

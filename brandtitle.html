@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凑单品</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./less/brandtitle.css">
+    <script src="./js/rem.js"></script>
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="/index.html">
+            <img src="./images/header_logo.png" alt="">
+        </a>
+        <img src="./images/header_app.png" alt="">
+    </header>
+    <main id="main">
+        <section id="search">
+            <input type="search" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </section>
+        <nav id="nav">
+            <a href="/index.html">首页</a>
+            >
+            <a href="/brandtitle.html">全部分类</a>
+            >
+        </nav>
+        <div class="page-header">
+            <h4>热门品牌排行</h4>
+        </div>
+        <section id="list">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            123
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <ul class="panel-body-list">
+                                <li><a href="">你好世界</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="foot-top">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="javascript:0" class="btn-top">返回顶部</a>
+        </div>
+        <div class="foot-bottom">
+            <p><a href="#">手机APP下载</a> 慢慢买手机版--掌上比价平台</p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+</body>
+<script id="tpl" type="html/text">
+    {{each res}}
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne{{$index}}"
+                aria-expanded="true" aria-controls="collapseOne">
+                {{$index}}
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            </h4>
+        </div>
+        <div id="collapseOne{{$index}}" class="panel-collapse {{$index=='电视'?'collapse in':'collapse'}}" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+                <ul class="panel-body-list">
+                    {{each $value}}
+                    <li><a href="brand-content.html?brandtitleid={{$value.brandTitleId}}">{{$value.brandTitle}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/mui/js/mui.js"></script>
+
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
+<script src="./js/brandtitle.js"></script>
+<script>
+    $('.collapse').collapse()
+</script>
+
+</html>
